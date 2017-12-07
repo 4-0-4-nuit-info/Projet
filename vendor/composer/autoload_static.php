@@ -15,14 +15,13 @@ class ComposerStaticInit69cf6091f36802771bef3e1ce6bc7015
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '6a47392539ca2329373e0d33e1dba053' => __DIR__ . '/..' . '/symfony/polyfill-intl-icu/bootstrap.php',
         '32dcc8afd4335739640db7d200c1971d' => __DIR__ . '/..' . '/symfony/polyfill-apcu/bootstrap.php',
-        '719971e375036615a0685b6fb054583d' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php',
+        '1b98b2e913ad14bcab7ebd4b63db9ea3' => __DIR__ . '/..' . '/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'T' => 
         array (
             'Twig\\' => 5,
-            'Tests\\' => 6,
         ),
         'S' => 
         array (
@@ -76,20 +75,12 @@ class ComposerStaticInit69cf6091f36802771bef3e1ce6bc7015
         array (
             'Composer\\CaBundle\\' => 18,
         ),
-        'A' => 
-        array (
-            'AppBundle\\' => 10,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
-        ),
-        'Tests\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/tests',
         ),
         'Symfony\\Polyfill\\Util\\' => 
         array (
@@ -215,10 +206,11 @@ class ComposerStaticInit69cf6091f36802771bef3e1ce6bc7015
         array (
             0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
         ),
-        'AppBundle\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src/AppBundle',
-        ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/src',
+        1 => __DIR__ . '/../..' . '/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -287,6 +279,7 @@ class ComposerStaticInit69cf6091f36802771bef3e1ce6bc7015
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit69cf6091f36802771bef3e1ce6bc7015::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit69cf6091f36802771bef3e1ce6bc7015::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit69cf6091f36802771bef3e1ce6bc7015::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit69cf6091f36802771bef3e1ce6bc7015::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit69cf6091f36802771bef3e1ce6bc7015::$classMap;
 

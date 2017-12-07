@@ -1,0 +1,4 @@
+services:
+#    sec_rout_user.example:
+#        class: SecRout\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

@@ -30,6 +30,15 @@ class appProdProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBundle\R
         }
 
 
+        // sec_rout_user_homepage
+        if ('' === $trimmedPathinfo) {
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'sec_rout_user_homepage');
+            }
+
+            return array (  '_controller' => 'SecRout\\UserBundle\\Controller\\DefaultController::indexAction',  '_route' => 'sec_rout_user_homepage',);
+        }
+
         // homepage
         if ('' === $trimmedPathinfo) {
             if (substr($pathinfo, -1) !== '/') {
