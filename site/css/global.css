@@ -1,4 +1,9 @@
 
+
+*{
+	font-size: 10.5pt;
+	font-weight: normal;
+}
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -43,9 +48,10 @@ h3{
 	float: left;
 	color: white;
 }
-ul:nth-child(1) > li.btn.btn-danger{
-	foreground color: #9d9d9d;
+.background{
 	background color: #d9534f;
-	font size: 10.5pt;
-	font weight: normal;
 }
+.foreground{
+	foreground color: #9d9d9d;
+}
+
