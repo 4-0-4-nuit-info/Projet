@@ -104,12 +104,36 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
         }
 
         // homepage
-        if ('' === $trimmedPathinfo) {
-            if (substr($pathinfo, -1) !== '/') {
-                return $this->redirect($pathinfo.'/', 'homepage');
+        if ('/accueil' === $pathinfo) {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::accueilAction',  '_route' => 'homepage',);
+        }
+
+        if (0 === strpos($pathinfo, '/c')) {
+            // calendrier
+            if ('/calendrier' === $pathinfo) {
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::calendrierAction',  '_route' => 'calendrier',);
             }
 
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
+            // connexion
+            if ('/connexion' === $pathinfo) {
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::connexionAction',  '_route' => 'connexion',);
+            }
+
+            // contact
+            if ('/contact' === $pathinfo) {
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::contactAction',  '_route' => 'contact',);
+            }
+
+        }
+
+        // prevenir
+        if ('/prevenir' === $pathinfo) {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::prevenirAction',  '_route' => 'prevenir',);
+        }
+
+        // urgences
+        if ('/urgences' === $pathinfo) {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::urgencesAction',  '_route' => 'urgences',);
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
