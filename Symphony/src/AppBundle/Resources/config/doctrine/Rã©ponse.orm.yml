@@ -1,0 +1,27 @@
+!!binary QXBwQnVuZGxlXEVudGl0eVxS46lwb25zZQ==:
+    type: entity
+    table: réponse
+    id:
+        idquestion:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: idQuestion
+        idtheme:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: IdTheme
+    fields:
+        reponse:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: Reponse
+    lifecycleCallbacks: {  }

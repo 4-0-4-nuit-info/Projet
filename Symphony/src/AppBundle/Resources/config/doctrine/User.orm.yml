@@ -1,0 +1,49 @@
+AppBundle\Entity\User:
+    type: entity
+    table: user
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        pseudo:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+        password:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+        alcoolemie:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+        jeuneconducteur:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+            column: jeuneConducteur
+        sexe:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+        poids:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+    lifecycleCallbacks: {  }

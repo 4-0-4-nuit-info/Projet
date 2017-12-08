@@ -1,3 +1,0 @@
-sec_rout_user_homepage:
-    path:     /
-    defaults: { _controller: SecRoutUserBundle:Default:index }

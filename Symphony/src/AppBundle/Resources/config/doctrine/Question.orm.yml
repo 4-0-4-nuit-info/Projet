@@ -1,0 +1,27 @@
+AppBundle\Entity\Question:
+    type: entity
+    table: question
+    id:
+        idquestion:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: idQuestion
+        idtheme:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: IdTheme
+    fields:
+        question:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: Question
+    lifecycleCallbacks: {  }

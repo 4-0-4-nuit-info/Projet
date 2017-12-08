@@ -1,7 +1,0 @@
-sec_rout_user:
-    resource: "@SecRoutUserBundle/Resources/config/routing.yml"
-    prefix:   /
-
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation

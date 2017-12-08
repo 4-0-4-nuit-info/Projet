@@ -1,0 +1,28 @@
+AppBundle\Entity\Dictionnaire:
+    type: entity
+    table: dictionnaire
+    id:
+        iddico:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: IdDico
+            generator:
+                strategy: IDENTITY
+    fields:
+        mot:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: Mot
+        idtheme:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: IdTheme
+    lifecycleCallbacks: {  }
