@@ -21,57 +21,54 @@ class __TwigTemplate_5f761338dfcffb22d6f7efb0859795e90aae518fd4d8fa463a8547f0c98
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_e8bc9ad98c899379bbeb0c917af5892c9e87b5b72f3341183ae64b973a6b74e3 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_e8bc9ad98c899379bbeb0c917af5892c9e87b5b72f3341183ae64b973a6b74e3->enter($__internal_e8bc9ad98c899379bbeb0c917af5892c9e87b5b72f3341183ae64b973a6b74e3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/accueil.html.twig"));
+        $__internal_c8d6c2ee822fe44b57d34359e231c0b449d571b81d1b49b0b46dcb7f3b204993 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_c8d6c2ee822fe44b57d34359e231c0b449d571b81d1b49b0b46dcb7f3b204993->enter($__internal_c8d6c2ee822fe44b57d34359e231c0b449d571b81d1b49b0b46dcb7f3b204993_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/accueil.html.twig"));
 
-        $__internal_6b7b4fe9935340a611011f5f27797ed56a2770155b2006b1e065007f941ffbab = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_6b7b4fe9935340a611011f5f27797ed56a2770155b2006b1e065007f941ffbab->enter($__internal_6b7b4fe9935340a611011f5f27797ed56a2770155b2006b1e065007f941ffbab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/accueil.html.twig"));
+        $__internal_d79190dca61d6b7304d8265b4326f2e63dbbaf5d8fe4d01771d1d8e7034e2a19 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d79190dca61d6b7304d8265b4326f2e63dbbaf5d8fe4d01771d1d8e7034e2a19->enter($__internal_d79190dca61d6b7304d8265b4326f2e63dbbaf5d8fe4d01771d1d8e7034e2a19_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/accueil.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_e8bc9ad98c899379bbeb0c917af5892c9e87b5b72f3341183ae64b973a6b74e3->leave($__internal_e8bc9ad98c899379bbeb0c917af5892c9e87b5b72f3341183ae64b973a6b74e3_prof);
+        $__internal_c8d6c2ee822fe44b57d34359e231c0b449d571b81d1b49b0b46dcb7f3b204993->leave($__internal_c8d6c2ee822fe44b57d34359e231c0b449d571b81d1b49b0b46dcb7f3b204993_prof);
 
         
-        $__internal_6b7b4fe9935340a611011f5f27797ed56a2770155b2006b1e065007f941ffbab->leave($__internal_6b7b4fe9935340a611011f5f27797ed56a2770155b2006b1e065007f941ffbab_prof);
+        $__internal_d79190dca61d6b7304d8265b4326f2e63dbbaf5d8fe4d01771d1d8e7034e2a19->leave($__internal_d79190dca61d6b7304d8265b4326f2e63dbbaf5d8fe4d01771d1d8e7034e2a19_prof);
 
     }
 
     // line 2
     public function block_body($context, array $blocks = array())
     {
-        $__internal_d9913645560f62957dbe217b90f285c82a78c75d928067617e2af5d074395430 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d9913645560f62957dbe217b90f285c82a78c75d928067617e2af5d074395430->enter($__internal_d9913645560f62957dbe217b90f285c82a78c75d928067617e2af5d074395430_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_e9f61b991ffcbf0759ae4d94d49f63429111a135eeeacc627f2eef9b6194764b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_e9f61b991ffcbf0759ae4d94d49f63429111a135eeeacc627f2eef9b6194764b->enter($__internal_e9f61b991ffcbf0759ae4d94d49f63429111a135eeeacc627f2eef9b6194764b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        $__internal_02129b615d8242456c7c6a18446e9eb71678f209530369d9345f75e51c561d2d = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_02129b615d8242456c7c6a18446e9eb71678f209530369d9345f75e51c561d2d->enter($__internal_02129b615d8242456c7c6a18446e9eb71678f209530369d9345f75e51c561d2d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_851dcf613fd7bc29058919850ddb3624fd78ca5991fa79d165ad6b4990accf31 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_851dcf613fd7bc29058919850ddb3624fd78ca5991fa79d165ad6b4990accf31->enter($__internal_851dcf613fd7bc29058919850ddb3624fd78ca5991fa79d165ad6b4990accf31_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 3
         echo "<div class=\"container-fluid text-center\">    
   <div class=\"row content\" id=\"page\">
-    <div class=\"col-sm-2 sidenav\">
-      <div class=\"calendrier\"><a href=\"#\" style=\"color: black\">...</a></div>
+    <div class=\"col-sm-2 sidenav\" id=\"gauche\">
+      <!--<div id=\"calendrier\"><a href=\"#\" style=\"color: black\">...</a></div>-->
+      <img src=\"image/IMAGE_Gauche.png\" alt=\"logo\"/>
     </div>
     <div class=\"col-sm-8 text-left\"> 
       <h1>Bienvenue</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <hr>
     </div>
-    <div class=\"col-sm-2 sidenav\">
-      <div class=\"well\">
-        <p>ADS</p>
-      </div>
-      <div class=\"well\">
-        <p>ADS</p>
+    <div class=\"col-sm-2 sidenav\" id=\"logo\">
+    <img src=\"image/IMAGE_Droite.png\" alt=\"logo\"/>
       </div>
     </div>
   </div>
 </div>
 ";
         
-        $__internal_02129b615d8242456c7c6a18446e9eb71678f209530369d9345f75e51c561d2d->leave($__internal_02129b615d8242456c7c6a18446e9eb71678f209530369d9345f75e51c561d2d_prof);
+        $__internal_851dcf613fd7bc29058919850ddb3624fd78ca5991fa79d165ad6b4990accf31->leave($__internal_851dcf613fd7bc29058919850ddb3624fd78ca5991fa79d165ad6b4990accf31_prof);
 
         
-        $__internal_d9913645560f62957dbe217b90f285c82a78c75d928067617e2af5d074395430->leave($__internal_d9913645560f62957dbe217b90f285c82a78c75d928067617e2af5d074395430_prof);
+        $__internal_e9f61b991ffcbf0759ae4d94d49f63429111a135eeeacc627f2eef9b6194764b->leave($__internal_e9f61b991ffcbf0759ae4d94d49f63429111a135eeeacc627f2eef9b6194764b_prof);
 
     }
 
@@ -104,24 +101,22 @@ class __TwigTemplate_5f761338dfcffb22d6f7efb0859795e90aae518fd4d8fa463a8547f0c98
 {% block body %}
 <div class=\"container-fluid text-center\">    
   <div class=\"row content\" id=\"page\">
-    <div class=\"col-sm-2 sidenav\">
-      <div class=\"calendrier\"><a href=\"#\" style=\"color: black\">...</a></div>
+    <div class=\"col-sm-2 sidenav\" id=\"gauche\">
+      <!--<div id=\"calendrier\"><a href=\"#\" style=\"color: black\">...</a></div>-->
+      <img src=\"image/IMAGE_Gauche.png\" alt=\"logo\"/>
     </div>
     <div class=\"col-sm-8 text-left\"> 
       <h1>Bienvenue</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <hr>
     </div>
-    <div class=\"col-sm-2 sidenav\">
-      <div class=\"well\">
-        <p>ADS</p>
-      </div>
-      <div class=\"well\">
-        <p>ADS</p>
+    <div class=\"col-sm-2 sidenav\" id=\"logo\">
+    <img src=\"image/IMAGE_Droite.png\" alt=\"logo\"/>
       </div>
     </div>
   </div>
 </div>
-{% endblock %}", "default/accueil.html.twig", "D:\\UwAmp\\www\\Projet\\Symphony\\app\\Resources\\views\\default\\accueil.html.twig");
+{% endblock %}
+", "default/accueil.html.twig", "D:\\UwAmp\\www\\Projet\\Symphony\\app\\Resources\\views\\default\\accueil.html.twig");
     }
 }
