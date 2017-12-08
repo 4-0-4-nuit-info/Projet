@@ -38,7 +38,14 @@
 		</div>
 	  </div>
 	</nav>
+	    <div class="col-sm-2 sidenav" id="gauche">
+      <!--<div id="calendrier"><a href="#" style="color: black">...</a></div>-->
+      <img src="{{ asset('image/IMAGE_Gauche.png')}}" alt="logo"/>
+    </div>
         {% block body %}{% endblock %}
+			    <div class="col-sm-2 sidenav" id="logo">
+    <img class="gauche" src="{{ asset('image/IMAGE_Droite.png')}}" alt="logo"/>
+      </div>
 		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         {% block javascripts %}{% endblock %}
