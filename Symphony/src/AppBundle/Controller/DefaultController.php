@@ -84,5 +84,6 @@ class DefaultController extends Controller
         return $this->render('default/urgences.html.twig', [
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
-    }
+    
+	}
 }

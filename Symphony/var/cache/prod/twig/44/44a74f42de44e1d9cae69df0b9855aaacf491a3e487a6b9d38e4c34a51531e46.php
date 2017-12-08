@@ -30,24 +30,13 @@ class __TwigTemplate_0ab2ddd478501c237267654aa73282e88bb5b3765b984fa042c62080d75
         // line 3
         echo "<div class=\"container-fluid text-center\">    
   <div class=\"row content\" id=\"page\">
-    <div class=\"col-sm-2 sidenav\">
-      <div class=\"calendrier\"><a href=\"#\" style=\"color: black\">...</a></div>
-    </div>
     <div class=\"col-sm-8 text-left\"> 
       <h1>Bienvenue</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <hr>
     </div>
-    <div class=\"col-sm-2 sidenav\">
-      <div class=\"well\">
-        <p>ADS</p>
-      </div>
-      <div class=\"well\">
-        <p>ADS</p>
-      </div>
     </div>
   </div>
-</div>
 ";
     }
 

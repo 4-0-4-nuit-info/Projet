@@ -83,6 +83,11 @@
   'DoctrineBundle:Collector:db.html.twig' => __DIR__.'/../../../vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig',
   'DoctrineBundle:Collector:explain.html.twig' => __DIR__.'/../../../vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig',
   '::base.html.twig' => __DIR__.'/../../../app/Resources/views/base.html.twig',
+  ':default:accueil.html.twig' => __DIR__.'/../../../app/Resources/views/default/accueil.html.twig',
+  ':default:calendrier.html.twig' => __DIR__.'/../../../app/Resources/views/default/calendrier.html.twig',
+  ':default:connexion.html.twig' => __DIR__.'/../../../app/Resources/views/default/connexion.html.twig',
+  ':default:contact.html.twig' => __DIR__.'/../../../app/Resources/views/default/contact.html.twig',
   ':default:index.html.twig' => __DIR__.'/../../../app/Resources/views/default/index.html.twig',
+  ':default:prevenir.html.twig' => __DIR__.'/../../../app/Resources/views/default/prevenir.html.twig',
   ':default:urgences.html.twig' => __DIR__.'/../../../app/Resources/views/default/urgences.html.twig',
 );

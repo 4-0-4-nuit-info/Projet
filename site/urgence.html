@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>404_name_not_found</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/global.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body
+
+<a href="#">Accueil</a> &gt; <a href="#">Rubrique</a> &gt; 
+
+<a href="page2.html"><img src="oeil.jpg"></img></a>
+<a href="accueil.html"><img src="tadaaaa.png"></img></a>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div><h3>La sécurité routière pour tous</h3></div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="prevenir.html">Prévenir</a></li>
+        <li><a href="calendrier.html">Calendrier</a></li>
+        <li><a href="contact.html">A Propos</a></li>
+        <li class="btn btn-danger" style="background-color: navy; border:none;"><a href="#">Urgence</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="connexion.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content" id="page">
+    <div class="col-sm-2 sidenav" id="gauche">
+      <!--<div id="calendrier"><a href="#" style="color: black">...</a></div>-->
+      <img src="image/IMAGE_Gauche.png" alt="logo"/>
+    </div>
+    <div class="col-sm-8 innerHTML-left"> 
+      <h1>Urgence</h1>
+	  <h2>Etapes à suivre</h2>
+	  <p>Vous venez de rencontrer un problème ou d'assister à un accident ? <br /> 
+	  Suivez les quelques questions afin de savoir comment réagir.<br /><br /></p>
+      <div id="questionnaire">
+	<b><div id="question"></div></b>
+	<div id="reponse"></div>
+	<br /> <br />
+	<b><div id="question2"></div></b>
+	<div id="reponse2"></div>
+	<b><div id="question3"></div></b>
+	<div id="reponse3"></div>
+	<div id="boutons">
+	<input type="button" value="oui" id="oui" onclick="questionnaireOui()"></input>
+	<input type="button" value="non" id="non" onclick="questionnaireNon()"></input></div><br /><br />
+	
+	</div>
+	<h2><font color="red"><b>Pour un nouvel essai, rechargez la page</b></font></h2>
+		</div> 
+
+    <div class="col-sm-2 sidenav" id="logo">
+    <img src="image/IMAGE_Droite.png" alt="logo"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>404_name_not_found</p> 
+  <div class="btn-group btn-group-justify">
+    <a href="https://twitter.com/namenotfound17?lang=fr" class="btn btn-primary">Twitter</a>
+  </div>
+</footer>
+<script src='js/urgences.js'></script>
+</body>
+</html>

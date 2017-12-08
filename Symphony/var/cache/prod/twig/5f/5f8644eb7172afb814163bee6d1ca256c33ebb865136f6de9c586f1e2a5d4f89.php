@@ -7,81 +7,73 @@ class __TwigTemplate_9f82818e8b5b72771c1153fec43bc6ddbcb67b900cf7955529fd9c3cc19
     {
         parent::__construct($env);
 
-        $this->parent = false;
-
+        // line 1
+        $this->parent = $this->loadTemplate("base.html.twig", ":default:urgences.html.twig", 1);
         $this->blocks = array(
+            'body' => array($this, 'block_body'),
+            'javascripts' => array($this, 'block_javascripts'),
         );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        // line 1
-        echo "<!DOCTYPE html>
-<html lang=\"en\">
-<head>
-  <title>404_name_not_found</title>
-  <meta charset=\"utf-8\">
-  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
-  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">
-  <link rel=\"stylesheet\" href=\"css/global.css\"/>
-  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>
-  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>
-</head>
-<body>
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
 
-<nav class=\"navbar navbar-inverse\">
-  <div class=\"container-fluid\">
-    <div class=\"navbar-header\">
-      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">
-        <span class=\"icon-bar\"></span>
-        <span class=\"icon-bar\"></span>
-        <span class=\"icon-bar\"></span>                        
-      </button>
-    </div>
-    <div><h3>La sécurité routière pour tous</h3></div>
-    <div class=\"collapse navbar-collapse\" id=\"myNavbar\">
-      <ul class=\"nav navbar-nav\">
-        <li><a href=\"accueil.html\">Accueil</a></li>
-        <li><a href=\"prevenir.html\">Prévenir</a></li>
-        <li><a href=\"calendrier.html\">Calendrier</a></li>
-        <li><a href=\"contact.html\">Contact</a></li>
-        <li class=\"btn btn-danger\" style=\"background-color: navy; border:none;\"><a href=\"#\">Urgence</a></li>
-      </ul>
-      <ul class=\"nav navbar-nav navbar-right\">
-        <li><a href=\"connexion.html\"><span class=\"glyphicon glyphicon-log-in\"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  
-<div class=\"container-fluid text-center\">    
+    // line 2
+    public function block_body($context, array $blocks = array())
+    {
+        // line 3
+        echo "<div class=\"container-fluid innerHTML-center\">    
   <div class=\"row content\"  id=\"page\">
     <div class=\"col-sm-2 sidenav\">
-      <div class=\"calendrier\"><a href=\"#\" style=\"color: black\">...</a></div>
+      <div class=\"calendrier\"><a href=\"#\">...</a></div>
     </div>
+    <div class=\"col-sm-8 innerHTML-left\"> 
+      <h1>Urgence</h1>
+\t  <h2>Etapes à suivre</h2>
+\t  <p>Vous venez de rencontrer un problème ou d'assister à un accident ? <br /> 
+\t  Suivez les quelques questions afin de savoir comment réagir.<br /><br /></p>
+      <div id=\"questionnaire\">
+\t<b><div id=\"question\"></div></b>
+\t<div id=\"reponse\"></div>
+\t<br /> <br />
+\t<b><div id=\"question2\"></div></b>
+\t<div id=\"reponse2\"></div>
+\t<b><div id=\"question3\"></div></b>
+\t<div id=\"reponse3\"></div>
+\t<div id=\"boutons\">
+\t<input type=\"button\" value=\"oui\" id=\"oui\" onclick=\"questionnaireOui()\"></input>
+\t<input type=\"button\" value=\"non\" id=\"non\" onclick=\"questionnaireNon()\"></input></div><br /><br />
+\t
+\t</div>
+\t<h2><font color=\"red\"><b>Pour un nouvel essai, rechargez la page</b></font></h2>
+\t\t</div> 
+\t  
+<div class=\"container-fluid text-center\">    
+  <div class=\"row content\" id=\"page\">
     <div class=\"col-sm-8 text-left\"> 
-      <h1>Welcome</h1>
+      <h1>Bienvenue</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <hr>
     </div>
-    <div class=\"col-sm-2 sidenav\">
-      <div class=\"well\">
-        <p>ADS</p>
-      </div>
-      <div class=\"well\">
-        <p>ADS</p>
-      </div>
     </div>
   </div>
-</div>
+ 
+</div></div>";
+    }
 
-<footer class=\"container-fluid text-center\">
-  <p>Footer Text</p>
-</footer>
-
-</body>
-</html>
-";
+    // line 41
+    public function block_javascripts($context, array $blocks = array())
+    {
+        echo "<script src=\"";
+        echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\AssetExtension')->getAssetUrl("js/urgences.js"), "html", null, true);
+        echo "\"></script>";
     }
 
     public function getTemplateName()
@@ -89,9 +81,14 @@ class __TwigTemplate_9f82818e8b5b72771c1153fec43bc6ddbcb67b900cf7955529fd9c3cc19
         return ":default:urgences.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  72 => 41,  32 => 3,  29 => 2,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
