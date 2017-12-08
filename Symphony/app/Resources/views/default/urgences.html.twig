@@ -1,14 +1,31 @@
 {% extends "base.html.twig" %}
 {% block body %}
-<div class="container-fluid text-center">    
+<div class="container-fluid innerHTML-center">    
   <div class="row content"  id="page">
     <div class="col-sm-2 sidenav">
-      <div class="calendrier"><a href="#" style="color: black">...</a></div>
+      <div class="calendrier"><a href="#">...</a></div>
     </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
+    <div class="col-sm-8 innerHTML-left"> 
+      <h1>Urgence</h1>
+	  <h2>Etapes à suivre</h2>
+	  <p>Vous venez de rencontrer un problème ou d'assister à un accident ? <br /> 
+	  Suivez les quelques questions afin de savoir comment réagir.<br /><br /></p>
+      <div id="questionnaire">
+	<b><div id="question"></div></b>
+	<div id="reponse"></div>
+	<br /> <br />
+	<b><div id="question2"></div></b>
+	<div id="reponse2"></div>
+	<b><div id="question3"></div></b>
+	<div id="reponse3"></div>
+	<div id="boutons">
+	<input type="button" value="oui" id="oui" onclick="questionnaireOui()"></input>
+	<input type="button" value="non" id="non" onclick="questionnaireNon()"></input></div><br /><br />
+	
+	
+	<h2><font color="red"><b>Pour un nouvel essai, rechargez la page</b></font></h2>
+		</div>
+	  
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
@@ -21,3 +38,5 @@
   </div>
 </div>
 {% endblock %}
+
+{% block javascripts %}<script src="{{ asset('js/urgences.js') }}"></script>{% endblock %}

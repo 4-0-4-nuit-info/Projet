@@ -20,7 +20,7 @@ class DefaultController extends Controller
     }
 	
    /**
-     * @Route("/accueil", name="homepage")
+     * @Route("/accueil", name="accueil")
      */
     public function accueilAction(Request $request)
     {
