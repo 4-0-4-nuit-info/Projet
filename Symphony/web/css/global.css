@@ -24,9 +24,7 @@
     footer {
       background-color: #555;
       color: white;
-      margin-top:20%;
-      padding:2%;
-      text-align:center;
+      padding: 15px;
     }
     
     /*On small screens, set height to 'auto' for sidenav and grid */
@@ -40,15 +38,22 @@
     #myNavbar{
     	margin-left: 53%;
     }
-
+html, body{
+	height: 100%;
+}
+#page{
+	height: 100vh; 
+}
 h3{
 	float: left;
 	color: white;
 }
-.background{
-	background color: #d9534f;
+#logo{
+	padding: 0;
 }
-.foreground{
-	foreground color: #9d9d9d;
+#calendrier{
+	position:fixed;
 }
-
+#gauche{
+	padding:0;
+}
